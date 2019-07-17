@@ -1,0 +1,14 @@
+<html>
+    <title>Image Compare Result</title>
+    <body>
+        {% if result %}
+        original Image:<br/>
+        <img src="{{original}}"/>
+        <br/>
+        Result Image:<br/>
+        <img src="{{result}}"/>
+        {% else %}
+        <h2>上传失败，原因：{{ message }} </h2>
+        {% endif %}
+    </body>
+</html>
